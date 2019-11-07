@@ -20,3 +20,14 @@
 .App-link {
   color: #09d3ac;
 }
+
+.margin-paragraph {
+  margin-bottom: 2% !important;
+}
+
+.brewery-card {
+  width: 40%;
+  margin: 2% 4%;
+  border: 1px solid slateblue;
+  justify-content: space-around;
+}
