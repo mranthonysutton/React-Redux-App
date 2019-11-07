@@ -11,6 +11,10 @@ export const fetchBreweryData = () => dispatch => {
 
   axios
     .get("https://api.openbrewerydb.org/breweries")
-    .then(response => console.log(response))
-    .catch(error => console.log(error));
+    .then(response => {
+      dispatch({ type: FETCH_SUCCESS, payload: response.data });
+    })
+    .catch(error => {
+      dispatch({ type: FETCH_FAILURE, payload: error });
+    });
 };
